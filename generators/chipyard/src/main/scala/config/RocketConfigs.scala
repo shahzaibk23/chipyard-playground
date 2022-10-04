@@ -257,7 +257,7 @@ class JustReadTLRocketConfig extends Config(
   // new chipyard.config.WithUART ++
   // new chipyard.config.WithBootROM ++
   // new chipyard.config.WithL2TLBs(1024) ++
-  new chipyard.example.WithJustRead ++ // Use our MMIO peripheral, connect TL
+  new chipyard.example.WithJustRead(address = 0x2000, width = 32) ++ // Use our MMIO peripheral, connect TL
   // new freechips.rocketchip.subsystem.WithNoMMIOPort ++
   // new freechips.rocketchip.subsystem.WithNoSlavePort ++
   // new freechips.rocketchip.subsystem.WithInclusiveCache ++

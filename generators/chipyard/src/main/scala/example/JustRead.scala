@@ -84,6 +84,6 @@ trait CanHavePeripheryJustRead {
         
 }
 
-class WithJustRead extends Config((site, here, up) => {
-    case JustReadKey => Some(JustReadParams())
+class WithJustRead(address: BigInt, width:Int) extends Config((site, here, up) => {
+    case JustReadKey => Some(JustReadParams(address, width))
 })
