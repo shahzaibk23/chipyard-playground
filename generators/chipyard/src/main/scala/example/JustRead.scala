@@ -3,12 +3,11 @@ package chipyard.example
 import chisel3._
 import chisel3.util._
 import chisel3.experimental.{IntParam, BaseModule}
-import freechips.rocketchip.subsystem.BaseSubSystem
 import freechips.rocketchip.config.{Parameters, Field, Config}
 import freechips.rocketchip.diplomacy._
 import freechips.rocketchip.tilelink._
 import freechips.rocketchip.regmapper.{HasRegMap, RegField}
-import freechips.rocketchip.util.{UintIsOneOf}
+import freechips.rocketchip.util.{UIntIsOneOf}
 
 case class JustReadParams(
     address : BigInt = 0x2000,
