@@ -265,5 +265,5 @@ class JustReadTLRocketConfig extends Config(
   new freechips.rocketchip.subsystem.WithNBigCores(1) ++
   // new freechips.rocketchip.subsystem.WithCoherentBusTopology ++
   // new freechips.rocketchip.system.BaseConfig
-  new freechips.rocketchip.system.AbstractConfig
+  new chipyard.config.AbstractConfig
   )
