@@ -74,11 +74,12 @@ trait CanHavePeripheryJustRead {
     this: BaseSubSystem =>
         private val portName = "justReadPortName"
 
-        val justRead= p(JustReadKey) match
+        val justRead= p(JustReadKey) match {
             case Some(params) => {
                 val justRead = LazyModule(new JustReadTL(params, pbus.beatBytes)(p))
                 pbus.toVariableWidthSlave(Some(portName)) { justRead.node }
             }
             case None => None
+        }
         
 }
