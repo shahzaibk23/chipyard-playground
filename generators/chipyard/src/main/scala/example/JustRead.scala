@@ -40,7 +40,7 @@ trait  JustReadTopModule extends HasRegMap{
     implicit val p: Parameters
     def params: JustReadParams
 
-    val isJustRead = RegInit(UInt(params.width.W))
+    val isJustRead = RegInit(230.U(params.width.W))
 
     val impl = Module(new JustReadMMIOChiselModule(params.width))
 
