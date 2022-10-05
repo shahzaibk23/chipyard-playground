@@ -16,10 +16,10 @@ int main(void){
     ref = justRead_ref();
 
     if(result != ref){
-        printf("ERROR: result = %d, ref = %d", result, ref);
+        printf("ERROR: result = %d, ref = %d\n", result, ref);
         return 1;
     } else {
-        printf("SUCCESS: result = %d, ref = %d", result, ref);
+        printf("SUCCESS: result = %d, ref = %d\n", result, ref);
         return 0;
     }
 
