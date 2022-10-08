@@ -14,3 +14,12 @@
 |   |    |       ||   _   |  |   |  |   |_| ||   |  | ||       ||       || | |   ||       |
 |___|    |_______||__| |__|  |___|  |_______||___|  |_||_______||_______||_|  |__||______| 
 ```
+
+## Motivation
+This repo is created for the purpose of keeping records of multiple experiments done within the Chipyard Framework
+
+## List of Experiments
+
+| Component | Purpose |
+| --- | --- |
+| [JustRead](generators/chipyard/src/main/scala/example/JustRead.scala) | A custom peripheral added only for reading a static value, with 1 [Big Core](generators/chipyard/src/main/scala/config/RocketConfigs.scala) |
